@@ -1,6 +1,9 @@
 # Fix My Code Challenge
 
-This project contains fixes for existing code bases in various languages.
+This directory contains solutions for the Fix My Code Challenge.
 
-## Tasks
-- **0. FizzBuzz**: Fixed Python implementation so that multiples of 15 print `FizzBuzz` instead of `Fizz`.
+- 0-fizzbuzz.py
+- 1-print_square.js
+- 2-sort.rb
+- 3-user.py
+- 4-delete_dnodeint/
