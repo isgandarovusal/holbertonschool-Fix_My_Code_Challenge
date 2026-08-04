@@ -2,19 +2,17 @@
 #include <stdlib.h>
 
 /**
- * delete_dnodeint_at_index - deletes the node at index index of a dlistint_t linked list
- *
- * @head: double pointer to the first element of the list
+ * delete_dnodeint_at_index - deletes the node at index of a dlistint_t list
+ * @head: double pointer to the head of the list
  * @index: index of the node to delete
- *
- * Return: 1 if it succeeded, -1 if it failed
+ * Return: 1 if succeeded, -1 if failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *saved_head;
 	unsigned int i;
 
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 		return (-1);
 
 	saved_head = *head;
@@ -34,7 +32,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		*head = saved_head->next;
 		if (*head != NULL)
 			(*head)->prev = NULL;
-
 		free(saved_head);
 		return (1);
 	}
