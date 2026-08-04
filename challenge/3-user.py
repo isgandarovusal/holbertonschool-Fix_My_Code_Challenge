@@ -3,6 +3,7 @@
 User class
 """
 import hashlib
+import uuid
 
 
 class User:
@@ -10,7 +11,7 @@ class User:
 
     def __init__(self):
         """ Constructor """
-        self.id = None
+        self.id = str(uuid.uuid4())
         self.__password = None
 
     @property
